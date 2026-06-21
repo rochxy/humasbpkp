@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Komunikasi Publik</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="title">
+        DASHBOARD KOMUNIKASI PUBLIK
+    </div>
+
+    <div id="clock">
+    <div id="tanggalSekarang"></div>
+    <div id="jamSekarang"></div>
+</div>
+</header>
+
+<div class="top-section">
+
+    <div class="card stat-card">
+        <div id="totalAgenda" class="stat-number">0</div>
+        <div class="stat-label">Total Agenda 2026</div>
+    </div>
+
+    <div class="card stat-card">
+        <div id="agendaBulanIni" class="stat-number">0</div>
+        <div class="stat-label">Total Agenda Bulan Ini</div>
+    </div>
+
+    <div class="card stat-card">
+        <div id="personelHariIni" class="stat-number">0</div>
+        <div class="stat-label">Personel Bertugas Hari Ini</div>
+    </div>
+
+</div>
+
+<div class="agenda-layout">
+
+    <div class="card agenda-main">
+
+        <h2> Agenda Kegiatan </h2>
+
+        <div class="agenda-wrapper">
+            <div id="agendaCards"></div>
+        </div>
+
+    </div>
+
+    <div class="card agenda-today">
+
+        <div id="widgetNow"></div>
+
+        <div id="widgetTomorrow"></div>
+
+        <div class="card-mini">
+
+            <h3>Statistik Kategori 2026</h3>
+
+            <div id="kategori2026"></div>
+
+        </div>
+
+        <h2>Agenda Hari Ini</h2>
+
+        <div class="today-container">
+
+            <div id="todayAgenda"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="running-text">
+    <marquee scrollamount="6">
+        Monitoring Agenda Kegiatan Komunikasi Publik
+    </marquee>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
